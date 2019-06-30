@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/thevinternet/vinternet-css-animation#readme",
   "engines": {
-    "node": ^"11.12.0",
+    "node": "^11.12.0",
     "npm": "^6.9.0",
   },
   "browserslist": [
