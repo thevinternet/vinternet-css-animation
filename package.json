@@ -16,6 +16,10 @@
     "url": "https://github.com/thevinternet/vinternet-css-animation/issues"
   },
   "homepage": "https://github.com/thevinternet/vinternet-css-animation#readme",
+  "engines": {
+    "node": ^"11.0.x"
+    "npm": "^6.x.x"
+  },
   "browserslist": [
     "last 2 versions",
     "> 2%",
