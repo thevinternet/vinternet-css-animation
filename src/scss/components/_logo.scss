@@ -1,0 +1,206 @@
+/*-- Vinternet Logo Container --*/
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: $base-spacing-unit-medium 0;
+  @include media($medium) {
+    padding-top: $base-spacing-unit-tiny;
+  }
+}
+
+/*-- Shared Animation Properties --*/
+
+[data-play-state="off"] {
+  animation-play-state: paused;
+}
+
+[data-play-state="on"] {
+  animation-play-state: running;
+}
+
+/*-- V Light Stoke Animation --*/
+
+@keyframes vLightStroke {
+  0% {
+    opacity: 1;
+    fill: transparent;
+    stroke: $white;
+    stroke-dashoffset: -1000;
+  }
+  99% {
+    fill: transparent;
+    stroke: $white;
+  }
+  100% {
+    opacity: 1;
+    fill: $purple-4;
+    stroke: $purple-4;
+    stroke-dashoffset: 0;
+  }
+}
+
+path.v-light {
+  opacity: 0;
+  fill: $purple-4;
+  stroke: $white;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: -2000;
+  // Duration, Timing Function, Direction, Fill Mode, Delay & Name
+  @include css-animation(5s, ease-in, normal, forwards, 1s, vLightStroke);
+}
+
+/*-- V Dark Stoke Animation --*/
+
+@keyframes vDarkStroke {
+  0% {
+    opacity: 1;
+    fill: transparent;
+    stroke: $white;
+    stroke-dashoffset: 1000;
+  }
+  99% {
+    fill: transparent;
+    stroke: $white;
+  }
+  100% {
+    opacity: 1;
+    fill: $purple-1;
+    stroke: $purple-1;
+    stroke-dashoffset: 0;
+  }
+}
+
+path.v-dark {
+  opacity: 0;
+  fill: $purple-1;
+  stroke: $white;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 2000;
+  // Duration, Timing Function, Direction, Fill Mode, Delay & Name
+  @include css-animation(4.5s, ease-out, normal, forwards, 1.5s, vDarkStroke);
+}
+
+/*-- Circle White Stoke Animation --*/
+
+@keyframes cWhiteStroke {
+  0% {
+    opacity: 1;
+    fill: transparent;
+    stroke: $white;
+    stroke-dashoffset: 1000;
+  }
+  99% {
+    fill: transparent;
+    stroke: $white;
+  }
+  100% {
+    opacity: 1;
+    fill: $white;
+    stroke:$white;
+    stroke-dashoffset: 0;
+  }
+}
+
+path.c-white {
+  opacity: 0;
+  fill: $white;
+  stroke: $white;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 2000;
+  // Duration, Timing Function, Direction, Fill Mode, Delay & Name
+  @include css-animation(5.5s, linear, normal, forwards, 0.5s, cWhiteStroke);
+}
+
+/*-- Circle Dark Stoke Animation --*/
+
+@keyframes cDarkStroke {
+  0% {
+    opacity: 1;
+    fill: transparent;
+    stroke: $white;
+    stroke-dashoffset: -1000;
+  }
+  99% {
+    fill: transparent;
+    stroke: $white;
+  }
+  100% {
+    opacity: 1;
+    fill: $purple-1;
+    stroke: $purple-1;
+    stroke-dashoffset: 0;
+  }
+}
+
+path.c-dark {
+  opacity: 0;
+  fill: $purple-1;
+  stroke: $white;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: -2000;
+  // Duration, Timing Function, Direction, Fill Mode, Delay & Name
+  @include css-animation(4s, ease-out, normal, forwards, 2s, cDarkStroke);
+}
+
+/*-- Circle Light Stoke Animation --*/
+
+@keyframes cLightStroke {
+  0% {
+    opacity: 1;
+    fill: transparent;
+    stroke: $white;
+    stroke-dashoffset: 1000;
+  }
+  99% {
+    fill: transparent;
+    stroke: $white;
+  }
+  100% {
+    opacity: 1;
+    fill: $purple-4;
+    stroke: $purple-4;
+    stroke-dashoffset: 0;
+  }
+}
+
+path.c-light {
+  opacity: 0;
+  fill: $purple-4;
+  stroke: $white;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 2000;
+  // Duration, Timing Function, Direction, Fill Mode, Delay & Name
+  @include css-animation(2.5s, linear, normal, forwards, 2.5s, cLightStroke);
+}
+
+/*-- Circle White Burst Animation --*/
+
+@keyframes cBurst {
+  from {
+    transform: scale(1);
+    opacity: 1;
+    fill: $white;
+  }
+  50% {
+    transform: scale(1.0075);
+    transform-origin: center;
+    opacity: 0.5;
+    fill: $white;
+  }
+  to {
+    transform: scale(1);
+    opacity: 0;
+    fill: transparent;
+  }
+}
+
+path.c-burst {
+  opacity: 0;
+  fill: $white;
+  // Duration, Timing Function, Direction, Fill Mode, Delay & Name
+  @include css-animation(0.5s, ease-out, normal, forwards, 6s, cBurst);
+}

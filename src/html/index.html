@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>The Vinternet - CSS Animation</title>
+    <meta name="title" content="The Vinternet CSS SVG Animation">
+    <meta name="description" content="Example of an animated Vinternet logo using an SVG and CSS3">
+
+    <!-- Shortcut, Browser and Mobile Icons  -->
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
+    <meta name="msapplication-TileColor" content="#222222">
+    <meta name="msapplication-TileImage" content="mstile-144x144.png">
+    <meta name="theme-color" content="#A96398">
+
+    <!-- Stylesheets -->
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <!-- Google Web Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400&display=swap" rel="stylesheet" type="text/css">
+
+  </head>
+  <body class="vinternet">
+    <header>
+      <h1>The Vinternet</h1>
+      <h2>CSS Animation</h2>
+    </header>
+    <main>
+      <div class="container">
+        <div class="logo" id="vinternetLogo">
+          <svg xmlns="http://www.w3.org/2000/svg" width="290" height="290" viewBox="0 0 300 300" aria-hidden="true">
+            <path class="v-light" data-play-state="off" fill="#D6BFD3" stroke="#FFFFFF" d="M160.907 253.849s-9.54 1.228-12.717 1.184c-1.59-.021-7.424.182-12.577-.269-5.39-.471-10.946-1.648-10.946-1.648L39.963 112.257s5.586-16.686 9.811-22.65c2.067-2.918 6.694-10.266 11.67-16.139 5.469-6.455 11.222-11.332 11.222-11.332l76.365 141.697 50.218-154.539s8.741 4.7 14.858 9.98c5.096 4.4 12.909 11.369 17.274 17.05 5.271 6.861 10.544 16.549 10.544 16.549l-81.018 160.976z"></path>
+            <path class="v-dark" data-play-state="off" fill="#864778" stroke="#FFFFFF" d="M195.391 242.793s-9.204 4.548-14.826 6.521c-3.395 1.191-16.786 5.08-25.291 5.745s-19.901-.484-19.901-.484L53.539 83.879s4.503-7.642 8.458-11.39c2.195-2.08 7.858-8.039 12.74-12.118 5.102-4.262 10.591-7.786 10.591-7.786l76.304 158.585 66.149-138.598s6.354 7.75 9.783 12.743c1.897 2.762 6.814 11.539 10.137 20.226 3.323 8.688 5.053 17.285 5.053 17.285l-57.363 119.967z"></path>
+            <path class="c-white" data-play-state="off" fill="#FFFFFF" stroke="#FFFFFF" d="M145 35.005c60.747 0 109.992 49.247 109.992 109.993 0 60.747-49.245 109.993-109.992 109.993S35.007 205.746 35.007 144.999C35.007 84.252 84.252 35.005 145 35.005m0-8.869c-65.54 0-118.862 53.322-118.862 118.862 0 31.748 12.365 61.6 34.814 84.05 22.45 22.449 52.3 34.813 84.048 34.813 31.749 0 61.599-12.363 84.048-34.813 22.451-22.45 34.813-52.302 34.813-84.05s-12.362-61.597-34.813-84.048C206.598 38.502 176.749 26.136 145 26.136z"></path>
+            <path class="c-dark" data-play-state="off" fill="#874878" stroke="#FFFFFF" d="M145 26.304c65.555 0 118.695 53.143 118.695 118.695 0 65.554-53.141 118.695-118.695 118.695-65.552 0-118.694-53.142-118.694-118.695C26.305 79.447 79.448 26.304 145 26.304m0-17.63c-36.413 0-70.647 14.18-96.397 39.928C22.855 74.352 8.674 108.586 8.674 145s14.181 70.648 39.928 96.396c25.75 25.747 59.984 39.93 96.397 39.93s70.65-14.183 96.396-39.93c25.748-25.747 39.928-59.982 39.928-96.396s-14.18-70.647-39.928-96.397C215.65 22.854 181.413 8.674 145 8.674z"></path>
+            <path class="c-light" data-play-state="off" fill="#D5BFD3" stroke="#FFFFFF" d="M144.995 5.502c77.048 0 139.501 62.459 139.501 139.491 0 77.046-62.453 139.503-139.501 139.503-77.034 0-139.49-62.457-139.49-139.503C5.504 67.961 67.96 5.502 144.995 5.502m0-2.236c-37.854 0-73.445 14.743-100.214 41.513C18.01 71.548 3.268 107.139 3.268 144.994c0 37.858 14.742 73.456 41.513 100.228 26.767 26.77 62.357 41.514 100.214 41.514 37.861 0 73.456-14.744 100.226-41.514 26.771-26.771 41.513-62.367 41.513-100.228 0-37.855-14.742-73.445-41.513-100.215-26.772-26.77-62.368-41.513-100.226-41.513z"></path>
+            <path class="c-burst" data-play-state="off" fill="#FFFFFF" d="M144.994 2.712c78.588 0 142.29 63.708 142.29 142.281 0 78.587-63.701 142.292-142.29 142.292-78.576 0-142.281-63.705-142.281-142.292C2.713 66.42 66.418 2.712 144.994 2.712m0-2.28c-38.612 0-74.914 15.037-102.219 42.343C15.47 70.08.433 106.382.433 144.994c0 38.616 15.037 74.924 42.342 102.23 27.303 27.306 63.604 42.345 102.219 42.345 38.62 0 74.924-15.039 102.229-42.345 27.307-27.306 42.344-63.613 42.344-102.23 0-38.612-15.037-74.914-42.344-102.219C219.917 15.469 183.61.432 144.994.432z"></path>
+          </svg>
+        </div>
+        <div class="panel">
+          <div class="control">
+            <button id="toggleAnimation" class="btn--primary">Play</button>
+            <button id="restartAnimation" class="btn--primary">Restart</button>
+          </div>
+          <div class="card">
+            <p>Click the play button to start and stop the animation. If you would like to see the animation again from the beginning simply click restart button.</p>
+          </div>
+        </div>
+        <div class="panel">
+          <div class="card">
+            <h3>Technologies:</h3>
+            <ul>
+              <li>HTML 5</li>
+              <li>CSS 3 (SASS compiled)</li>
+              <li>SVG (PNG fallbacks)</li>
+              <li>JavaScript ES6 (Babel compiled)</li>
+              <li>Node, Express and Gulp</li>
+              <li><a href="https://github.com/thevinternet/vinternet-css-animation" title="View the Vinternet CSS animation repository on GitHub">View project on GitHub</a></li>
+            </ul>
+          </div>
+        </div>
+        <ul class="social">
+          <li><a href="https://github.com/thevinternet/vinternet-css-animation" class="github" title="View the Vinternet CSS animation repository on GitHub">GitHub</a></li>
+          <li><a href="https://twitter.com/thevinternet" title="Visit the Vinternet on Twitter" class="twitter">Twitter</a></li>
+          <li><a href="https://uk.linkedin.com/in/jamesvinter" class="linkedin" title="Visit the Vinternet on LinkedIn">LinkedIn</a></li>
+        </ul>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; The Vinternet</p>
+    </footer>
+    <!-- JavaScript -->
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>
