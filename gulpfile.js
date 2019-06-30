@@ -154,4 +154,4 @@ gulp.task('server', (done) => {
 });
 
 // Run Build, Deploy & Watch Tasks
-gulp.task('deploy', gulp.series('compile', 'server', 'watch'));
+gulp.task('build', gulp.series('compile', 'server', 'watch'));
