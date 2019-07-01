@@ -1,5 +1,5 @@
-# Vinternet CSS Animation Demonstration
-A simple demonstration illustrating animation of the Vinternet logo using CSS3 and utilises the stoke properties of the SVG paths to create a nice visual effect.
+# Vinternet CSS Animation
+A simple demonstration illustrating animation of the Vinternet logo using CSS3 and utilising the stoke properties of the SVG paths to create a nice visual effect.
 
 ## Requirements
 
@@ -13,7 +13,7 @@ A simple demonstration illustrating animation of the Vinternet logo using CSS3 a
 
 ## Browser Support
 
-The CSS 3 animation techniques used in this application perform as expected across all evergreen browsers (Firefox, Chrome, Edge, Safari, etc) but will not work correctly in versions of Internet Explorer 11 and below.
+The CSS3 animation techniques used in this application perform as expected across all evergreen browsers (Firefox, Chrome, Edge, Safari, etc) but will not work correctly in versions of Internet Explorer 11 and below.
 
 ## Contributing
 If you wish to submit a bug fix or feature, you can create a pull request and it will be merged pending a code review.
