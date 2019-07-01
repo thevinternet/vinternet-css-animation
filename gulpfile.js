@@ -139,7 +139,6 @@ gulp.task('server', (done) => {
     script: 'server.js',
     ignore: ['ignored.js']
   })
-
   stream
     .on('restart', (done) => {
       console.log('restarted!');

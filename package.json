@@ -2,11 +2,6 @@
   "name": "vinternet-css-animation",
   "version": "1.0.0",
   "description": "The Vinternet CSS Animation",
-  "main": "server.js",
-  "scripts": {
-    "start": "gulp build",
-    "develop": "gulp local"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/thevinternet/vinternet-css-animation.git"
@@ -17,6 +12,11 @@
     "url": "https://github.com/thevinternet/vinternet-css-animation/issues"
   },
   "homepage": "https://github.com/thevinternet/vinternet-css-animation#readme",
+  "main": "server.js",
+  "scripts": {
+    "start": "gulp build",
+    "develop": "gulp local"
+  },
   "engines": {
     "node": "11.12.0",
     "npm": "6.7.0"
