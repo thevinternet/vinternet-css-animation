@@ -153,5 +153,8 @@ gulp.task('server', (done) => {
   done();
 });
 
-// Run Build, Deploy & Watch Tasks
-gulp.task('build', gulp.series('compile', 'server', 'watch'));
+// Run Local Build - Compile, Server & Watch Tasks
+gulp.task('local', gulp.series('compile', 'server', 'watch'));
+
+// Run Heroku Build - Compile & Server Tasks
+gulp.task('build', gulp.series('compile', 'server'));

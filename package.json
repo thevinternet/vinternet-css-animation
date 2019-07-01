@@ -4,7 +4,8 @@
   "description": "The Vinternet CSS Animation",
   "main": "server.js",
   "scripts": {
-    "start": "gulp deploy"
+    "start": "gulp build",
+    "develop": "gulp local"
   },
   "repository": {
     "type": "git",
