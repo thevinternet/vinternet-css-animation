@@ -1,41 +1,23 @@
 // Gulp Config: The Vinternet - CSS Animation
 
 // Modules (https://www.npmjs.com/package/)
-
-// npm install gulp --save-dev
 const gulp = require('gulp');
-
-// npm install gulp-clean --save-dev
 const clean = require('gulp-clean');
-
-// npm install gulp-changed --save-dev
 const changed = require('gulp-changed');
-
-// npm install merge-stream --save-dev
 const merge = require('merge-stream')
-
-// npm install gulp-imagemin --save-dev
 const imagemin = require('gulp-imagemin');
-
-// npm install gulp-babel gulp-deporder gulp-concat gulp-strip-debug gulp-uglify --save-dev
 const babel = require('gulp-babel');
 const concat = require('gulp-concat');
 const deporder = require('gulp-deporder');
 const stripdebug = require('gulp-strip-debug');
 const uglify = require('gulp-uglify');
-
-// npm install gulp-sass gulp-postcss postcss-assets autoprefixer css-mqpacker cssnano --save-dev
 const sass = require('gulp-sass');
 const postcss = require('gulp-postcss');
 const assets = require('postcss-assets');
 const autoprefixer = require('autoprefixer');
 const mqpacker = require('css-mqpacker');
 const cssnano = require('cssnano');
-
-// npm install gulp-watch --save-dev
 const watch = require ('gulp-watch');
-
-// npm install gulp-nodemon --save-dev
 const nodemon = require('gulp-nodemon');
 
 // Development Mode Flag
@@ -120,7 +102,7 @@ gulp.task('javascript', () => {
   return jsbuild.pipe(gulp.dest(build + 'js/'));
 });
 
-// Run All Build Tasks
+// Run All Asset Compilation Tasks
 gulp.task('compile', gulp.series('root', 'html', 'css', 'javascript'));
 
 // Watch Task (gulp-watch)
