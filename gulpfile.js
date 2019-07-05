@@ -121,7 +121,7 @@ gulp.task('server', (done) => {
   stream
     .on('restart', (done) => {
       console.log('restarted!');
-      //done();
+      done();
     })
     .on('crash', (done) => {
       console.error('Application has crashed!\n')
@@ -134,10 +134,10 @@ gulp.task('server', (done) => {
 // ********** BUILD TASKS ********** //
 
 // Clean Build Directory & Run All Asset Compilation Tasks
-gulp.task('compile', gulp.series('root', 'pug', 'css'));
+gulp.task('compile', gulp.series('root', 'html', 'css', 'javascript'));
 
 // Clean Build Directory & Run Local Build - Compile, Server & Watch Tasks
 gulp.task('local', gulp.series('compile', 'server', 'watch'));
 
-// Clean Build Directory & Run Heroku Build - Compile, JavaScript & Server Tasks
-gulp.task('build', gulp.series('compile', 'javascript', 'server'));
+// Clean Build Directory & Run Heroku Build - Compile & Server Tasks
+gulp.task('build', gulp.series('compile', 'server'));
